@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/box_grey_bg_white"
+        android:padding="@dimen/dp_12">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/ivIcon"
+            android:layout_width="@dimen/dp_84"
+            android:layout_height="@dimen/dp_84"
+            android:src="@drawable/car"
+            android:layout_gravity="center"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:text="Cars"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_8"
+            android:textColor="@color/black"
+            android:id="@+id/tvTitle"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

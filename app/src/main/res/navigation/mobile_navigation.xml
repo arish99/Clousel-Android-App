@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.arish1999.olx.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+
+
+        <action
+            android:id="@+id/action_home_to_browse"
+            app:destination="@id/navigation_browse"
+            app:popUpTo="@id/navigation_home"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpToInclusive="false">
+
+        </action>
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_sell"
+        android:name="com.arish1999.olx.ui.sell.SellFragment"
+        android:label="@string/title_sell"
+        tools:layout="@layout/fragment_sell" >
+
+        <action
+            android:id="@+id/action_sell_to_include_details"
+            app:destination="@id/navigation_include_details"
+            app:popUpTo="@id/navigation_sell"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpToInclusive="false">
+
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_include_details"
+        android:name="com.arish1999.olx.ui.includeDetails.IncludeDetailsFragment"
+        android:label="@string/title_include_details"
+        tools:layout="@layout/fragment_include_details" >
+
+        <action
+            android:id="@+id/action_include_details_to_upload_photo"
+            app:destination="@id/navigation_upload_photo"
+            app:popUpTo="@id/navigation_include_details"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpToInclusive="false">
+
+        </action>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_upload_photo"
+        android:name="com.arish1999.olx.ui.uploadPhoto.UploadPhotoFragment"
+        android:label="@string/upload_photo"
+        tools:layout="@layout/fragment_upload_photo" >
+
+        <action
+            android:id="@+id/action_upload_photo_to_my_ads"
+            app:destination="@id/navigation_myAds"
+
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpToInclusive="false">
+
+        </action>
+
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_myAds"
+        android:name="com.arish1999.olx.ui.myAdds.MyAdsFragment"
+        android:label="@string/title_my_adds"
+        tools:layout="@layout/fragment_myadds" >
+
+
+        <action
+            android:id="@+id/action_myads_to_details"
+            app:destination="@id/navigation_details"
+            app:popUpTo="@id/navigation_myAds"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpToInclusive="false">
+
+        </action>
+
+
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_details"
+        android:name="com.arish1999.olx.ui.details.DetailsFragment"
+        android:label="@string/title_details"
+        tools:layout="@layout/fragment_details" >
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_browse"
+        android:name="com.arish1999.olx.ui.browseCategories.BrowseCategoryFragment"
+        android:label="@string/title_browse"
+        tools:layout="@layout/fragment_browse_category" >
+
+        <action
+            android:id="@+id/action_browse_to_deails"
+            app:destination="@id/navigation_details"
+            app:popUpTo="@id/navigation_browse"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpToInclusive="false">
+
+        </action>
+
+
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.arish1999.olx.ui.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profile_to_settings"
+            app:destination="@id/navigation_settings"
+            app:popUpTo="@id/navigation_profile"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpToInclusive="false">
+
+        </action>
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.arish1999.olx.ui.settings.SettingsFragment"
+        android:label="@string/title_settings"
+        tools:layout="@layout/fragment_settings" >
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_favourites"
+        android:name="com.arish1999.olx.ui.favourites.FavouritesFragment"
+        android:label="@string/title_favourites"
+        tools:layout="@layout/fragment_favourites" >
+
+        <action
+            android:id="@+id/action_favourites_to_details"
+            app:destination="@id/navigation_details"
+            app:popUpTo="@id/navigation_favourites"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpToInclusive="false">
+
+        </action>
+
+
+    </fragment>
+
+
+</navigation>

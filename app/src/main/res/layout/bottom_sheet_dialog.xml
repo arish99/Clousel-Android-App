@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@null"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_8"
+        app:cardCornerRadius="@dimen/dp_16">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/select_source"
+                android:layout_marginTop="@dimen/dp_16"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:background="@color/darkGrey"
+                android:layout_marginTop="@dimen/dp_24"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/photo_gallery"
+                android:gravity="center"
+                android:textColor="@color/blue2"
+                android:padding="@dimen/dp_16"
+                android:textSize="@dimen/dp_20"
+                android:id="@+id/textViewPhoto"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:background="@color/darkGrey"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/camera"
+                android:gravity="center"
+                android:textColor="@color/blue2"
+                android:padding="@dimen/dp_16"
+                android:textSize="@dimen/dp_20"
+                android:id="@+id/textViewCamera"/>
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:layout_marginTop="@dimen/dp_16"
+        android:gravity="center"
+        android:textColor="@color/red"
+        android:padding="@dimen/dp_16"
+        android:textSize="@dimen/dp_20"
+        android:id="@+id/textViewCancel"/>
+
+
+
+
+</LinearLayout>

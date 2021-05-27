@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/black"
+    android:layout_height="match_parent">
+
+   <androidx.appcompat.widget.AppCompatButton
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/close"
+       android:background="@color/black"
+       android:textColor="@color/white"
+       android:padding="@dimen/dp_8"
+       android:id="@+id/btnClose"
+       android:layout_margin="@dimen/dp_8"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/previewImage"
+        android:background="@color/black"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"/>
+
+</LinearLayout>

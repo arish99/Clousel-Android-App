@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/browser_actions_bg_grey"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_8">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_location"
+                android:padding="@dimen/dp_4"
+                android:id="@+id/imageViewLocation"
+                android:layout_centerVertical="true">
+
+            </ImageView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:id="@+id/tvCityName"
+                android:layout_toEndOf="@id/imageViewLocation"
+                android:text="@string/Ind_ia"
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dp_4"
+                >
+
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_notifications_black_24dp"
+                android:padding="@dimen/dp_4"
+                android:id="@+id/notification"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true">
+
+            </ImageView>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/box_black_bg_white"
+            android:layout_margin="@dimen/dp_16"
+            android:padding="@dimen/dp_6">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_4"
+                android:src="@drawable/ic_search"
+                >
+
+            </ImageView>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="@string/find_cars"
+                android:singleLine="true"
+                android:id="@+id/edSearch"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                >
+
+            </androidx.appcompat.widget.AppCompatEditText>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             android:background="@color/white"
+            android:orientation="vertical"
+            >
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_8"
+                android:padding="@dimen/dp_8"
+                android:textColor="@color/black"
+                android:text="@string/browse_cat"
+                >
+
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/dp_8"
+                android:id="@+id/rv_categories"
+                >
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+
+
+
+   </LinearLayout>
+</LinearLayout>
